@@ -1,0 +1,29 @@
+﻿@page
+@model WebApp2.Pages.Forms.RegistrationModel
+@{
+}
+
+<div asp-validation-summary="All" style="color:red"></div>
+
+<div class="container-fluid">
+    <div class="panel">
+        <div class="panel-heading">
+            <h3>
+                <span class="glyphicon glyphicon-pencil"></span>
+                <b>CREATE ACCOUNT</b>
+            </h3>
+
+        </div>
+        <form method="post">
+            <input class="form-control"  asp-for="Create.UserName" placeholder="USERNAME" /><br />
+            <input class="form-control"  asp-for="Create.Name" placeholder="NAME" /><br />
+            <input class="form-control"  asp-for="Create.Email" placeholder="EMAIL" /><br />
+            <input class="form-control"  asp-for="Create.Address" placeholder="ADDRESS" /><br />
+            <input class="form-control"  asp-for="Create.Contact" placeholder="CONTACT" /><br />
+            <input class="form-control"  asp-for="Create.Age" placeholder="AGE" /><br />
+            <input class="form-control input-sm" asp-for="Create.Gender" placeholder="GENDER" /><br />
+            <button class="btn btn-primary btn-md" type="submit">Create</button><br />
+
+        </form>
+</div>
+</div>
